@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>RepositoryConfiguration.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ms-parameters</a> &gt; <a href="index.source.html" class="el_package">com.prismamp.todopago.configurations</a> &gt; <span class="el_source">RepositoryConfiguration.java</span></div><h1>RepositoryConfiguration.java</h1><pre class="source lang-java linenums">package com.prismamp.todopago.configurations;
+
+import org.springframework.cache.CacheManager;
+import org.springframework.cache.annotation.CachingConfigurerSupport;
+import org.springframework.cache.concurrent.ConcurrentMapCacheManager;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.data.domain.AuditorAware;
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
+
+@EnableJpaAuditing(auditorAwareRef = &quot;auditorProvider&quot;)
+@Configuration
+@EnableTransactionManagement
+<span class="nc" id="L15">public class RepositoryConfiguration extends CachingConfigurerSupport {</span>
+
+	@Bean
+	AuditorAware&lt;String&gt; auditorProvider() {
+<span class="nc" id="L19">		return new AuditorAwareImpl();</span>
+	}
+
+	@Bean(name = &quot;springCM&quot;)
+	@Override
+	public CacheManager cacheManager() {
+<span class="nc" id="L25">		return new ConcurrentMapCacheManager(&quot;entities&quot;);</span>
+	}
+
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span></div></body></html>

@@ -1,0 +1,15 @@
+/Users/damianwajser/git/todopago/ms/ms-parameters/src/main/java/com/prismamp/todopago/controllers/InputModeController.java
+/Users/damianwajser/git/todopago/ms/ms-parameters/src/main/java/com/prismamp/todopago/controllers/EndpointsEdpController.java
+/Users/damianwajser/git/todopago/ms/ms-parameters/src/main/java/com/prismamp/todopago/configurations/MyKeyGenerator.java
+/Users/damianwajser/git/todopago/ms/ms-parameters/src/main/java/com/prismamp/todopago/repository/EndpointsEdpRepository.java
+/Users/damianwajser/git/todopago/ms/ms-parameters/src/main/java/com/prismamp/todopago/MsParametersApplication.java
+/Users/damianwajser/git/todopago/ms/ms-parameters/src/main/java/com/prismamp/todopago/repository/GenericRepository.java
+/Users/damianwajser/git/todopago/ms/ms-parameters/src/main/java/com/prismamp/todopago/model/abstracts/GenericParameterEventHandler.java
+/Users/damianwajser/git/todopago/ms/ms-parameters/src/main/java/com/prismamp/todopago/model/EndpointsEdp.java
+/Users/damianwajser/git/todopago/ms/ms-parameters/src/main/java/com/prismamp/todopago/utils/ParametersUtils.java
+/Users/damianwajser/git/todopago/ms/ms-parameters/src/main/java/com/prismamp/todopago/model/abstracts/GenericParameter.java
+/Users/damianwajser/git/todopago/ms/ms-parameters/src/main/java/com/prismamp/todopago/configurations/RepositoryConfiguration.java
+/Users/damianwajser/git/todopago/ms/ms-parameters/src/main/java/com/prismamp/todopago/model/InputMode.java
+/Users/damianwajser/git/todopago/ms/ms-parameters/src/main/java/com/prismamp/todopago/controllers/AbstractController.java
+/Users/damianwajser/git/todopago/ms/ms-parameters/src/main/java/com/prismamp/todopago/repository/InputModeRepository.java
+/Users/damianwajser/git/todopago/ms/ms-parameters/src/main/java/com/prismamp/todopago/configurations/AuditorAwareImpl.java
