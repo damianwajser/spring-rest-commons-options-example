@@ -5,8 +5,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.test.damianwajser.model.OtherParameter;
 
-//@RestController
-//@RequestMapping("/other/parameter")
+@RestController
+@RequestMapping("/other/parameter")
 public class OtherParameterController extends AbstractController<OtherParameter> {
 
 }
