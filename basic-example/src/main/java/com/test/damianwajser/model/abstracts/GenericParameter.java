@@ -4,7 +4,6 @@ import java.io.Serializable;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import javax.persistence.Version;
 
 import org.hibernate.validator.constraints.NotBlank;
 
@@ -31,7 +30,6 @@ public abstract class GenericParameter implements Serializable {
 	@Auditable
 	protected String modifyUser;
 
-	@Version
 	@Auditable
 	private Long version;
 

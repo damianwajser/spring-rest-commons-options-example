@@ -1,6 +1,5 @@
 package com.test.damianwajser.model;
 
-import javax.persistence.Entity;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 
@@ -8,7 +7,6 @@ import org.hibernate.validator.constraints.NotEmpty;
 
 import com.test.damianwajser.model.abstracts.GenericParameter;
 
-@Entity
 public class OtherParameter extends GenericParameter{
 
 	/**

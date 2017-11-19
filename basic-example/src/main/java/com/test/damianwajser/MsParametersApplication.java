@@ -5,10 +5,8 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.ComponentScan;
-import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
-@EnableJpaRepositories
 @ComponentScan(basePackages={"com.github.damianwajser","com.prismamp.todopago"})
 @EnableAutoConfiguration
 @EnableCaching
