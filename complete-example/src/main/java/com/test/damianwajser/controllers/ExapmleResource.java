@@ -1,5 +1,7 @@
 package com.test.damianwajser.controllers;
 
+import java.util.Collection;
+
 import javax.validation.Valid;
 
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,7 +15,7 @@ import com.test.damianwajser.model.Example;
 @RestController
 @RequestMapping("/example")
 public class ExapmleResource {
-	
+
 	@GetMapping("/{id}")
 	public Example getById(@PathVariable("id") Integer id) {
 		Example example = new Example();
@@ -21,7 +23,13 @@ public class ExapmleResource {
 		return example;
 
 	}
-	
+
+	@GetMapping("/")
+	public Collection<Example> getAll() {
+		return null;
+
+	}
+
 	@PostMapping("/")
 	public Example post(@Valid Example example) {
 		return example;

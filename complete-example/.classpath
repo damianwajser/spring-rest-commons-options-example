@@ -124,7 +124,7 @@
       <attribute value="jar:file:/Users/damianwajser/.m2/repository/org/springframework/spring-webmvc/4.3.12.RELEASE/spring-webmvc-4.3.12.RELEASE-javadoc.jar!/" name="javadoc_location"/>
     </attributes>
   </classpathentry>
-  <classpathentry kind="var" path="M2_REPO/com/github/damianwajser/spring-rest-commons-options/0.0.16-SNAPSHOT/spring-rest-commons-options-0.0.16-SNAPSHOT.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/github/damianwajser/spring-rest-commons-options/0.0.17-SNAPSHOT/spring-rest-commons-options-0.0.17-SNAPSHOT.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar" sourcepath="M2_REPO/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7-sources.jar">
     <attributes>
       <attribute value="jar:file:/Users/damianwajser/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7-javadoc.jar!/" name="javadoc_location"/>
