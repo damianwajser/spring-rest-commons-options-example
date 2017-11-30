@@ -7,12 +7,13 @@ import javax.validation.Valid;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.test.damianwajser.model.Example;
 
-@RestController
+@RestController("/example")
 @RequestMapping("/example")
 public class ExapmleResource {
 
@@ -24,14 +25,14 @@ public class ExapmleResource {
 
 	}
 
-	@GetMapping("/")
+	@GetMapping
 	public Collection<Example> getAll() {
 		return null;
 
 	}
 
-	@PostMapping("/")
-	public Example post(@Valid Example example) {
+	@PostMapping
+	public Example post(@RequestBody @Valid Example example) {
 		return example;
 
 	}

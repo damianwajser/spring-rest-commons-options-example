@@ -16,20 +16,14 @@ public abstract class GenericParameter implements Serializable {
 	 */
 	private static final long serialVersionUID = -6926077659789502636L;
 
-	@Auditable
 	private Integer id;
 	@NotBlank(message = "El campo code es obligatorio")
 	private String code;
-	@Auditable
 	protected Date createDate;
-	@Auditable
 	protected Date modifyDate;
-	@Auditable
 	protected String createUser;
-	@Auditable
 	protected String modifyUser;
 
-	@Auditable
 	private Long version;
 
 	private boolean isActive;
@@ -38,6 +32,7 @@ public abstract class GenericParameter implements Serializable {
 		return id;
 	}
 
+	@Auditable
 	public Date getCreateDate() {
 		return createDate;
 	}
@@ -46,10 +41,12 @@ public abstract class GenericParameter implements Serializable {
 		return modifyDate;
 	}
 
+	@Auditable
 	public String getCreateUser() {
 		return createUser;
 	}
 
+	@Auditable
 	public String getModifyUser() {
 		return modifyUser;
 	}
